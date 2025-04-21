@@ -1,0 +1,49 @@
+.card:hover .side-card{
+    transform: rotatey(180deg);
+    visibility: hidden;
+}
+
+.card:hover .back-card{
+    visibility: visible;
+}
+
+
+.card:hover .back-card{
+    transform: rotateY(0deg);
+}
+
+.back-card{
+    visibility: hidden;
+    background-color: aqua;
+    position: absolute;
+
+    width: inherit;
+    height: inherit;
+    padding-top: 100px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.side-card{
+    padding-top: 100px;
+    position: absolute;
+    background-color: brown;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    font-size: 32px;
+}
+.card{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color: aliceblue;
+    left: 450px;
+    top: 70px;
+    bottom: 400px;
+    width: 300px;
+    height: 400px;
+}
+body{
+    color: black;
+    background-color: black;
+}
